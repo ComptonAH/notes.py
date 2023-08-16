@@ -1,7 +1,4 @@
-from typing import Dict
-
 import text
-import model
 
 
 def main_menu():
@@ -13,7 +10,21 @@ def main_menu():
 
 
 def input_note(title: str, msg: str):
-    title = title
-    msg = msg
     note = title + "\n" + msg + "\n"
     return note
+
+
+def change_choice():
+    return input(text.change_choice)
+
+
+def new_title():
+    return input(text.new_title)
+
+
+def new_msg():
+    return input(text.new_msg)
+
+
+def not_found_title():
+    return text.title_not_found
